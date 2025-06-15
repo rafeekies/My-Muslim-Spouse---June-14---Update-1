@@ -22,6 +22,14 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import NotFound from './pages/NotFound';
 import DailyPrayerBanner from './components/layout/DailyPrayerBanner';
+import HowItWorks from './pages/HowItWorks';
+import SuccessStories from './pages/SuccessStories';
+import Blog from './pages/Blog';
+import CookiePolicy from './pages/CookiePolicy';
+import EditProfile from './pages/EditProfile';
+import Favorites from './pages/Favorites';
+import Premium from './pages/Premium';
+import Articles from './pages/Articles';
 
 function App() {
   return (
@@ -48,6 +56,14 @@ function App() {
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/success-stories" element={<SuccessStories />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
+          <Route path="/edit-profile" element={<EditProfile />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/premium" element={<Premium />} />
+          <Route path="/articles" element={<Articles />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
